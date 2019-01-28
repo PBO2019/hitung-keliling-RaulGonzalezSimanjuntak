@@ -1,15 +1,17 @@
 public class Lingkaran {
-    double JariJari = 20;
-    double Phi = 3.14;
-    int Keliling;
+    private double JariJari = 20;
+    private double Phi = 3.14;
+    private double Keliling;
 
-    public static void main(String[] Raul) {
-        Lingkaran LI = new Lingkaran();
-        LI.Keliling();
+    public void kelilinglingkaran() {
+        this.Keliling = 2 * Phi * JariJari;
     }
 
-    public void Keliling() {
-        double Keliling = 2 * Phi * JariJari ;
-        System.out.println("Jadi Keliling Lingkaran = " + Keliling);
+    public void setJariJari(int JariJari) {
+        this.JariJari = JariJari;
+    }
+
+    public double getKeliling() {
+        return Keliling;
     }
 }

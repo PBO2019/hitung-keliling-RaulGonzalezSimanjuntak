@@ -1,13 +1,14 @@
 public class BujungSangkar {
-    int sisi = 20;
-    int keliling;
+    private int sisi = 20;
+    private int keliling;
 
-    public static void main (String [] Raul) {
-        BujungSangkar BJ = new BujungSangkar();
-        BJ.keliling();
+    public void kelilingbujungsangkar(){
+        this.keliling = 4 * sisi;
     }
-    public void keliling(){
-        int keliling = 4 * sisi;
-        System.out.println("Jadi Keliling Bujungsangkar Adalah = " + keliling);
+    public void setsisi(int sisi){
+        this.sisi = sisi;
+    }
+    public int getKeliling(){
+        return keliling;
     }
 }
